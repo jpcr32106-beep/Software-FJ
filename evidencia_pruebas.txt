@@ -1,0 +1,95 @@
+RESULTADO PRUEBAS AUTOMATIZADAS
+
+test_asesoria_polimorfismo ... ok
+test_calculo_con_impuesto_descuento ... ok
+test_calculo_sala ... ok
+test_cancelar_reserva ... ok
+test_cliente_duplicado ... ok
+test_cliente_valido ... ok
+test_confirmar_reserva ... ok
+test_correo_invalido ... ok
+test_equipo_polimorfismo ... ok
+test_procesar_sin_confirmar ... ok
+test_servicio_no_disponible ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK
+
+
+RESULTADO DEMOSTRACIÓN
+
+=== SOFTWARE FJ: SISTEMA INTEGRAL ===
+
+[1. Registrar cliente válido]
+Cliente Laura Gómez | ID: 1001 | Correo: laura@gmail.com
+Operación finalizada.
+
+[2. Registrar segundo cliente válido]
+Cliente Carlos Ruiz | ID: 1002 | Correo: carlos@gmail.com
+Operación finalizada.
+
+[3. Intentar cliente con correo inválido]
+Error controlado: El correo electrónico no tiene un formato válido.
+Operación finalizada.
+
+[4. Intentar identificación duplicada]
+Error controlado: Ya existe el cliente 1001.
+Operación finalizada.
+
+[5. Crear servicio de sala]
+Servicio de sala creado correctamente.
+Operación finalizada.
+
+[6. Crear servicio de alquiler de equipos]
+Servicio de alquiler de equipos creado correctamente.
+Operación finalizada.
+
+[7. Crear servicio de asesoría]
+Servicio de asesoría creado correctamente.
+Operación finalizada.
+
+[8. Intentar servicio con tarifa negativa]
+Error controlado: La tarifa debe ser mayor que cero.
+Operación finalizada.
+
+[9. Crear reserva válida]
+Reserva creada correctamente.
+Operación finalizada.
+
+[10. Confirmar reserva]
+Total confirmado: $100,000.00
+Operación finalizada.
+
+[11. Procesar reserva]
+Total procesado: $100,000.00
+Operación finalizada.
+
+[12. Intentar cancelar reserva procesada]
+Error controlado: No se puede cancelar una reserva procesada o cancelada.
+Operación finalizada.
+
+[13. Intentar reserva con cliente inexistente]
+Error controlado: No se encontró el cliente solicitado.
+Operación finalizada.
+
+[14. Calcular asesoría con impuesto y descuento]
+Total: $171,360.00
+Operación finalizada.
+
+[15. Intentar confirmar servicio no disponible]
+Error controlado: El servicio 'Sala fuera de servicio' no está disponible.
+Operación finalizada.
+
+[Ejemplo try/except/else]
+Cálculo correcto: $50,000.00
+
+[Ejemplo de encadenamiento de excepciones]
+Excepción encadenada controlada: No fue posible convertir el dato recibido.
+
+=== RESUMEN FINAL ===
+Clientes: 2 | Servicios: 3 | Reservas: 1
+
+Los errores y eventos se guardaron en logs/sistema.log.
+El sistema terminó la demostración sin detenerse por los errores controlados.
